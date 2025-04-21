@@ -1,0 +1,104 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "description": "tarificador",
+  "main": "index.js",
+  "homepage": ".",
+  "scripts": {
+    "build": "webpack --config webpack.config.prod.js",
+    "dev": "webpack-dev-server --config webpack.config.dev.js --host 0.0.0.0 --port=3000",
+    "start": "webpack-dev-server --config webpack.test.js --host 0.0.0.0 --history-api-fallback --port 3100",
+    "test": "jest",
+    "lint": "standard",
+    "lint-fix": "standard --fix"
+  },
+  "keywords": [
+    "react",
+    "javascript"
+  ],
+  "author": "John Navarrete",
+  "license": "MIT",
+  "allowedHosts": "all",
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/roboto": "^4.5.8",
+    "@hookform/error-message": "^2.0.0",
+    "@hookform/resolvers": "^2.9.8",
+    "@mui/material": "^5.14.3",
+    "@mui/x-data-grid": "^5.17.5",
+    "@mui/x-date-pickers": "^6.10.2",
+    "@oieduardorabelo/use-user-agent": "^5.0.1",
+    "@tabler/icons": "^1.119.0",
+    "axios": "^1.6.7",
+    "date-fns": "^2.30.0",
+    "dayjs": "^1.11.9",
+    "encode-utf8": "^2.0.0",
+    "file-saver": "^2.0.5",
+    "ipify": "^6.0.0",
+    "jwt-decode": "^4.0.0",
+    "moment": "^2.29.4",
+    "prop-types": "^15.8.1",
+    "qs": "^6.11.0",
+    "react": "^18.2.0",
+    "react-client-captcha": "^1.0.3",
+    "react-currency-format": "^1.1.0",
+    "react-currency-format-latest": "^1.0.1",
+    "react-device-detect": "^2.2.2",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.38.0",
+    "react-icons": "^4.4.0",
+    "react-imask": "^6.4.3",
+    "react-ip-details": "^1.2.6",
+    "react-ipgeolocation": "^1.4.0",
+    "react-modern-drawer": "^1.1.2",
+    "react-native-geolocation-service": "^5.3.1",
+    "react-number-format": "^4.9.4",
+    "react-perfect-scrollbar": "^1.5.8",
+    "react-redux": "^8.0.4",
+    "react-router-dom": "^6.3.0",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.1",
+    "sweetalert": "^2.1.2",
+    "web-vitals": "^2.1.4",
+    "xlsx": "^0.18.5",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
+    "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "dotenv-webpack": "^8.0.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.7",
+    "postcss": "^8.4.35",
+    "postcss-loader": "^7.0.2",
+    "sass": "^1.82.0",
+    "sass-loader": "^16.0.4",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  nginx:
+    image: "formulario_nginx"
+    container_name: "FORMULARIO_NGINX"
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "3100:80"
+    volumes:
+      - ../dist:/usr/share/nginx/html:ro

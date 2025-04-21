@@ -1,0 +1,25 @@
+version: "3.8"
+services:
+  frontend_fv:
+    container_name: "FRONTEND_FV_ONLINE"
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - "./:/app"
+    ports:
+      - "${PORT}:3100"
+    stdin_open: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - TZ=America/Guayaquil  # Cambiando la zona horaria a America/Guayaquil
+    command: npm run dev -- --port 3100
+    # command: npm run build
+    networks:
+      - dev-network
+    restart: unless-stopped
+
+networks:
+  dev-network:
+    name: dev-network
+    driver: bridge

@@ -1,0 +1,17 @@
+export const ACTICE_STEEP = "@formulario/ACTICE_STEEP";
+export const COMPLETED = "@formulario/COMPLETED";
+export const SET_EST_SOLICITANTE = "@formulario/SET_EST_SOLICITANTE";
+export const ALL_STEEPS_COMPLETE = "@formulario/ALL_STEEPS_COMPLETE";
+export const SET_STEEPS = "@formulario/SET_STEEPS";
+export const SET_PEEPS = "@formulario/SET_PEEPS";
+export const SET_PAGO_IMP_RENTAS = "@formulario/SET_PAGO_IMP_RENTAS";
+export const INCLUYE_REFERENCIAS = "@formulario/INCLUYE_REFERENCIAS";
+export const SET_DOCUMENTOS = "@formulario/SET_DOCUMENTOS";
+export const SET_DOCUMENTO_ESPECIFICO = "@formulario/SET_DOCUMENTO_ESPECIFICO";
+export const FORM_ESTADO = "@formulario/FORM_ESTADO";
+export const SET_HASH = "@formulario/SET_HASH";
+export const SET_CURRENT_STEEP = "@formulario/SET_CURRENT_STEEP";
+export const NEXT_STEEP = "@formulario/NEXT_STEEP";
+export const SET_OTROS_INGRESOS_INFO_FINANCIERA = "@formulario/SET_OTROS_INGRESOS_INFO_FINANCIERA";
+export const SET_REFERENCIAS = "@formulario/SET_REFERENCIAS";
+export const SET_FIRMA = "@formulario/SET_FIRMA";
